@@ -14,6 +14,9 @@
     <% if (skill.learned === true) { %>
         <h3>Learned</h3>
     <% } %>
-    <a href="">Delete Skill</a>   
+    <form action="/skills/<%= idx %>?_method=DELETE"
+        class="delete-form" method="POST">
+        <button type="submit">Delete Skill</button>
+    </form> 
 </body>
 </html>
